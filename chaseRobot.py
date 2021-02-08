@@ -14,7 +14,7 @@ sock.bind((UDP_IP, UDP_PORT))
 
 chaseVoice = ["chase1.mp3", "chase2.mp3"]
 
-s = 70#MAX_SPEED / 2
+s = 70
 
 def forward():
     motors.motor1.setSpeed(s)
@@ -100,6 +100,12 @@ def main():
                   pygame.mixer.music.stop()
 
           elif raw == "action2":
+              if blinkLeds == 0:
+                  blinkLeds = ~blinkLeds
+                  pill2kill.set()
+                  t.join()
+                  pill2kill = None
+                  pygame.mixer.music.stop()
               pygame.mixer.music.load(chaseVoice[voiceId])
               voiceId = (voiceId + 1) % 2
               pygame.mixer.music.play()
