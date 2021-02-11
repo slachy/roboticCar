@@ -45,7 +45,7 @@ class Motor(object):
         io_init()
 
         GPIO.output(self.dir_pin, dir_value)
-        self.pwm.start(speed)#(speed/MAX_SPEED)*100)
+        self.pwm.start(speed)
         
 
 class Motors(object):
