@@ -1,3 +1,4 @@
+#!/usr/bin/python2.7
 import socket
 import threading
 import pygame
