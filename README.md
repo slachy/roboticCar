@@ -68,7 +68,7 @@ cd roboticCar
 sudo python chaseRobot.py
 ```
 
-4. Automatyczne uruchamianie skryptu przy starcie systemu:
+3. Automatyczne uruchamianie skryptu przy starcie systemu:
 ```
 sudo systemctl edit --force --full chaseRobot.service  
 ```
