@@ -44,8 +44,8 @@
 
 ![image](https://user-images.githubusercontent.com/6802432/115986206-63f82a00-a5af-11eb-9a04-df9d1377cc2f.png)
 
-8. Przylutuj diody do rezystorów i Raspberry Pi. Niebieskie do pinu 20, a czerwone do pinu 21. Jeden koniec (+) przez rezystor do pinów, a drugi (-) do GND w RPi.
-9. Podłącz i zamocuj kamerę (zawsze to rób przy wyłączonym RPi, bo łatwo kamerę uszkodzić.
+7. Przylutuj diody do rezystorów i Raspberry Pi. Niebieskie do pinu 20, a czerwone do pinu 21. Jeden koniec (+) przez rezystor do pinów, a drugi (-) do GND w RPi.
+8. Podłącz i zamocuj kamerę (zawsze to rób przy wyłączonym RPi, bo łatwo kamerę uszkodzić.
 
 ## Oprogramowanie
 ### System
@@ -57,7 +57,7 @@
 ![image](https://user-images.githubusercontent.com/6802432/115987928-8d1cb880-a5b7-11eb-94f1-ad3f2de2ce93.png)
 
 
-6. Uruchom ponownie.
+5. Uruchom ponownie.
 
 ### Sterowanie
 1. Uruchom terminal.
@@ -97,6 +97,7 @@ sudo systemctl enable chaseRobot.service
 raspivid -t 999999 --hflip --vflip -o - -w 512 -h 512 -fps 15 | <ip> <port>
 ```
 W zależności od przymocowania kamery można zmieniać przez --hflip i --vflip
+
 2. Na PC:
 ```
 nc -l -p 5001 | mplayer  -fps 24 -cache 512 - 
