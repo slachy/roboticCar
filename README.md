@@ -60,11 +60,19 @@
 6. Uruchom ponownie.
 
 ### Sterowanie
-1. Pobierz skrypt sterujący robotem z githuba: git clone https://github.com/slachy/roboticCar.git
-2. cd roboticCar
-3. Uruchomienie: sudo python chaseRobot.py
-4. Start przy starcie systemu:
-    - sudo systemctl edit --force --full chaseRobot.service  
+1. Uruchom terminal.
+2. Pobierz skrypt sterujący robotem z githuba:
+```
+git clone https://github.com/slachy/roboticCar.git
+cd roboticCar
+sudo python chaseRobot.py
+```
+
+4. Automatyczne uruchamianie skryptu przy starcie systemu:
+```
+sudo systemctl edit --force --full chaseRobot.service  
+```
+Wpisz:
 ```
 [Unit]
 Description=Robo Chase
@@ -78,7 +86,10 @@ ExecStart=/home/pi/roboticCar/chaseRobot.py
 [Install]
 WantedBy=multi-user.target
 ```
+Zapisz i zamknij, a następnie:
+```
 sudo systemctl enable chaseRobot.service
+```
 
 ### Podgląd z kamery
 1. Na RPI:
@@ -88,8 +99,12 @@ raspivid -t 999999 --hflip --vflip -o - -w 512 -h 512 -fps 15 | <ip> <port>
 W zależności od przymocowania kamery można zmieniać przez --hflip i --vflip
 2. Na PC:
 ```
-nc -l -p 5001 | mplayer  -fps 24 -cache 512 -
+nc -l -p 5001 | mplayer  -fps 24 -cache 512 - 
 ```
+Na Windowsie polecenia uruchamiamy z cmd. Trzeba podać ścieżkę do nc.exe i mplayer.exe.
+Instalacja mplayer i nc na Windowsie.
+http://mplayerwin.sourceforge.net/downloads.html
+https://eternallybored.org/misc/netcat/
 
 ### Aplikacja mobilna do sterowania
 WIFI Command Center
