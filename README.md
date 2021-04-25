@@ -40,7 +40,7 @@
 ![image](https://user-images.githubusercontent.com/6802432/115985597-d582a900-a5ac-11eb-93c3-d95041450321.png)
 
 5. Załóż sterownik na raspberry pi.
-6. Przylutuj głośniki do wzmacniacza. Prawy głośnik do R+ i R-, lewy do L+ i L-, zasilanie z odpowiednich pinów RPI do +5V i GND. Przetnij przewód z jackiem i przylutuj odpowiedni końcówki do trzech złącz LIN, GND, RIN).
+6. Przylutuj głośniki do wzmacniacza. Prawy głośnik do R+ i R-, lewy do L+ i L-, zasilanie z odpowiednich pinów RPI do +5V i GND. Przetnij przewód z jackiem i przylutuj odpowiedni końcówki do trzech złącz LIN, GND, RIN). Wepnij jacka do wyjścia jack w RPi.
 
 ![image](https://user-images.githubusercontent.com/6802432/115986206-63f82a00-a5af-11eb-9a04-df9d1377cc2f.png)
 
@@ -118,7 +118,7 @@ Na pierwszym ekranie podaj adres ip swojego RPi oraz port: 550
 ## Nadwozie
 Elementy nadwozia wydrukowałem na bloku technicznym. Wzory: https://www.analogi.net/razvivashki/shest-bumazhnyh-podelok-s-mashinkami-i-geroyami-shhenyachego-patrulya
 Trzeba przeskalować odpowiednio, najlepiej zmierzyć średnice koła i dopasować odpowiednio szablon.
-Do tego wzmocniłem konstrukcję kartonem i drewnianymi patyczkami.
+Do tego wzmocniłem konstrukcję kartonem i drewnianymi patyczkami. Oczywiście można zrobić dowolne nadwozie i podstawić własne dźwięki ;)
 ![bebechy1](https://user-images.githubusercontent.com/6802432/115991118-5189ea80-a5c7-11eb-86b0-678c05d89df1.jpg)
 
 ![bebechy2](https://user-images.githubusercontent.com/6802432/115991129-5d75ac80-a5c7-11eb-8e44-b0f7ee4c9fb8.jpg)
