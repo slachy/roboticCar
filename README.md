@@ -33,14 +33,18 @@
 2. Przylutuj elementy sterownika silników.
  
 ![image](https://user-images.githubusercontent.com/6802432/115985508-702eb800-a5ac-11eb-9fb4-b7d78c30f266.png)
+
 3. Przyklej koszyk na baterie do podwozia taśmą montażową.
-4. Połącz przewody silników i koszyka ze sterownikiem. Jeżeli masz silniki bez przylutowanych przewodów, to najpierw musisz je przylutować. Podłącz przewody z koszyka na baterię z odpowiednimi złączami śrubowymi (plus do VIN, minus do GND). Podłącz silniki do pozostałych złącz śrubowych.
+4. Połącz przewody silników i koszyka ze sterownikiem. Jeżeli masz silniki bez przylutowanych przewodów, to najpierw musisz je przylutować. Podłącz przewody z koszyka na baterię z odpowiednimi złączami śrubowymi (plus do VIN, minus do GND). Podłącz silniki do pozostałych złącz śrubowych tak jak na rysunku. 
 
 ![image](https://user-images.githubusercontent.com/6802432/115985597-d582a900-a5ac-11eb-93c3-d95041450321.png)
+
 5. Załóż sterownik na raspberry pi.
-6. Przylutuj głośniki do wzmacniacza.
-7. Przylutuj przewody zasilające do wzmacniacza i Raspberry Pi.
-8. Przylutuj diody do rezystorów i Raspberry Pi.
+6. Przylutuj głośniki do wzmacniacza. Prawy głośnik do R+ i R-, lewy do L+ i L-, zasilanie z odpowiednich pinów RPI do +5V i GND.
+
+![image](https://user-images.githubusercontent.com/6802432/115986206-63f82a00-a5af-11eb-9a04-df9d1377cc2f.png)
+
+8. Przylutuj diody do rezystorów i Raspberry Pi. Niebieskie do pinu 20, a czerwone do pinu 21.
 9. Podłącz i zamocuj kamerę (zawsze to rób przy wyłączonym rpi, bo łatwo kamerę uszkodzić.
 
 ## Oprogramowanie
