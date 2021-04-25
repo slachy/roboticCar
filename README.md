@@ -40,12 +40,12 @@
 ![image](https://user-images.githubusercontent.com/6802432/115985597-d582a900-a5ac-11eb-93c3-d95041450321.png)
 
 5. Załóż sterownik na raspberry pi.
-6. Przylutuj głośniki do wzmacniacza. Prawy głośnik do R+ i R-, lewy do L+ i L-, zasilanie z odpowiednich pinów RPI do +5V i GND.
+6. Przylutuj głośniki do wzmacniacza. Prawy głośnik do R+ i R-, lewy do L+ i L-, zasilanie z odpowiednich pinów RPI do +5V i GND. Przetnij przewód z jackiem i przylutuj odpowiedni końcówki do trzech złącz LIN, GND, RIN).
 
 ![image](https://user-images.githubusercontent.com/6802432/115986206-63f82a00-a5af-11eb-9a04-df9d1377cc2f.png)
 
-8. Przylutuj diody do rezystorów i Raspberry Pi. Niebieskie do pinu 20, a czerwone do pinu 21.
-9. Podłącz i zamocuj kamerę (zawsze to rób przy wyłączonym rpi, bo łatwo kamerę uszkodzić.
+8. Przylutuj diody do rezystorów i Raspberry Pi. Niebieskie do pinu 20, a czerwone do pinu 21. Jeden koniec (+) przez rezystor do pinów, a drugi (-) do GND w RPi.
+9. Podłącz i zamocuj kamerę (zawsze to rób przy wyłączonym RPi, bo łatwo kamerę uszkodzić.
 
 ## Oprogramowanie
 ### System
@@ -53,7 +53,11 @@
 2. Uruchom Raspberry Pi z podłączonym ekranem (monitor lub tv) przez hdmi oraz klawiaturą i myszką przez USB.
 3. Przejdź przez początkową konfigurację i połącz się z internetem.
 4. W raspi-config -> interface options: Enable camera i ssh.
-5. Uruchom ponownie.
+
+![image](https://user-images.githubusercontent.com/6802432/115987928-8d1cb880-a5b7-11eb-94f1-ad3f2de2ce93.png)
+
+
+6. Uruchom ponownie.
 
 ### Sterowanie
 1. Pobierz skrypt sterujący robotem z githuba: git clone https://github.com/slachy/roboticCar.git
