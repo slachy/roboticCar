@@ -109,7 +109,7 @@ https://eternallybored.org/misc/netcat/
 
 ### Aplikacja mobilna do sterowania
 Pobierz ze sklapy Play: WIFI Command Center
-Na pierwszym ekranie podaj adres ip swojego RPi oraz port: 550
+Na pierwszym ekranie podaj adres ip swojego RPi oraz port: 5050
 
 ![apkan](https://user-images.githubusercontent.com/6802432/115991183-b1809100-a5c7-11eb-954e-425d487c64ab.jpg)
 
